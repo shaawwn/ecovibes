@@ -13,3 +13,13 @@
 .button {
 
 }
+
+/* Media queries */
+
+@media (max-width: 763px) {
+
+}
+
+@media(min-width: 764px) and (max-width: 1439px) {
+
+}
