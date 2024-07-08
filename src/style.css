@@ -10,16 +10,30 @@
     padding: 0;
 }
 
+:root {
+    --bg-primary: black;
+}
+
 .button {
 
 }
 
+
+/* || Nav */
+
+.navbar {
+    width: 100%;
+    background-color: var(--bg-primary);
+
+}
 /* Media queries */
 
+/* Mobile */
 @media (max-width: 763px) {
 
 }
 
+/* Tablet */
 @media(min-width: 764px) and (max-width: 1439px) {
 
 }
