@@ -12,23 +12,78 @@
 
 :root {
     --bg-primary: #0000006b;
+
 }
 
+/* || GENERAL */
 .button {
-
+    width: 165px;
+    height: 50px;
+    padding: .5rem;
+    border-radius: 5px;
+    font-size: 1.625rem;
+    background-color: var(--bg-primary);
 }
 
+.image-wrapper {
+    width: 75px;
+}
 
-/* || Nav */
+/* || NAV */
 
 .navbar {
     width: 100%;
-    background-color: var(--bg-primary);
+    height: 84px;
+    background-color: rgba(0,0,0,.5);
+    padding: .5rem 80px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
 }
-/* Media queries */
+
+.navbar__links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar__links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav__item {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.75rem;
+}
+
+.nav__logo {
+    height: 100%;
+    margin: auto;
+}
+
+/* || Media queries */
 
 /* Mobile */
 @media (max-width: 763px) {
+
+    .image-wrapper {
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+
+    .image-wrapper > img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .navbar {
+        padding: .5rem 20px;
+    }
 
 }
 
