@@ -1,0 +1,38 @@
+
+.carousel {
+    width: 100%;
+    position: relative;
+    height: 850px;
+}
+
+.carousel__item {
+
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out
+}
+
+.slide[data-active] {
+    opacity: 1
+}
+
+.carousel__previous, .carousel__next {
+    position: absolute;
+    padding: 1rem;
+    width: 100px;
+    background-color: rgba(0,0,0,0.3);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 11;
+}
+
+
+.carousel__next {
+    right:0px;
+}

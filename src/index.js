@@ -1,10 +1,6 @@
 import './style.css'
 
-import {Button} from './components'
-
-
 console.log("Loading scripts..")
-
 
 document.addEventListener("DOMContentLoaded", () => {
     loadElements()
@@ -19,9 +15,9 @@ function loadElements() {
     handleScreenResize()
 }
 
-function addLogo() {
+function addLogo(image) {
     const logo = document.getElementById('nav-logo')
-    logo.src = Logo
+    logo.src = image
 }
 
 function checkMobile() {
@@ -56,3 +52,8 @@ function showNavLinks() {
     hamburger.style.display = 'none'
 }
 
+function addCarousel(images) {
+    const carousel = new Carousel(images).createCarousel()
+
+    return carousel
+}
